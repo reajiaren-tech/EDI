@@ -21,7 +21,7 @@ export const DataVisualizer: React.FC<DataVisualizerProps> = ({ step, data }) =>
           <span>FORMAT: ANSI X12 (850 Purchase Order)</span>
           <span>ENCODING: ASCII (Standard)</span>
         </div>
-        <p>ISA*00*          *00*          *ZZ*{data.buyerName.toUpperCase().padEnd(15)}*ZZ*{data.supplierName.toUpperCase().padEnd(15)}*231025*1200*U*00401*000000001*0*P*>~</p>
+        <p>ISA*00*          *00*          *ZZ*{data.buyerName.toUpperCase().padEnd(15)}*ZZ*{data.supplierName.toUpperCase().padEnd(15)}*231025*1200*U*00401*000000001*0*P*&gt;~</p>
         <p>GS*PO*{data.buyerName.toUpperCase()}*{data.supplierName.toUpperCase()}*20231025*1200*1*X*004010~</p>
         <p className="bg-slate-800 animate-pulse">ST*850*0001~</p>
         <p>BEG*00*NE*{data.poNumber}**20231025~</p>
